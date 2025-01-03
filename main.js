@@ -42,12 +42,13 @@ const go = () => {
             a.target = "_blank";
             a.innerHTML = `
                 <figure class='zoom' onmousemove='zoom(event)' style='background-image: url(${lienH})'>
-                    <img src='${lienL}' onerror=''/>
+                    <img src='${lienL}' onerror='this.parentElement.style.display="none"'/>
                 </figure>
-                <img src='${lienL}' style='height: 1px!important' onerror=''/>
+                <img src='${lienL}' style='height: 1px!important' onerror='this.style.display="none"'/>
             `;
             div.append(a);
         }
+        container.append(div);
     });
 }
 
