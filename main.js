@@ -44,7 +44,7 @@ const go = () => {
                 <figure class='zoom' onmousemove='zoom(event)' style='background-image: url(${lienH})'>
                     <img src='${lienL}' onerror=''/>
                 </figure>
-                <img src='${lienL}' style='height: 1px!important' onerror='this.style.display="none"'/>
+                <img src='${lienL}' style='height: 1px!important' onerror=''/>
             `;
             div.append(a);
         }
