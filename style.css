@@ -10,7 +10,7 @@ ul{ color:#fff;
 }
 ul li{ margin: 0 10px;}
 ul input, ul select, ul button{color: #000;}
-ul input{width: 50px; border: solid 1px #efefef;}
+ul input{border: solid 1px #efefef;}
 ul button{ border: solid 1px #efefef; padding: 10px; background-color :#4172FA; border-radius:10px; color:#fff;}
 div{
     margin: 10px 0;
