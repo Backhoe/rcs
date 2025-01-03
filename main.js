@@ -3,7 +3,7 @@ const localISOTime = new Date(now.getTime() - (now.getTimezoneOffset() * 60000))
 
 document.body.innerHTML = `
     <ul>
-        <li><label>Date et Heure</label> <input type='datetime-local' id='datetime-local' value="${localISOTime}" step="300"></li>
+        <li><label>Date et Heure</label> <input type='datetime-local' id='datetime-local' value="${localISOTime}"></li>
         <li><button onclick='go()'>Go</button></li>
     </ul>
     <div class="flex imgsContainer"></div>
@@ -42,7 +42,7 @@ const go = () => {
             a.target = "_blank";
             a.innerHTML = `
                 <figure class='zoom' onmousemove='zoom(event)' style='background-image: url(${lienH})'>
-                    <img src='${lienL}' onerror='this.parentElement.style.display="none"'/>
+                    <img src='${lienL}' onerror=''/>
                 </figure>
                 <img src='${lienL}' style='height: 1px!important' onerror='this.style.display="none"'/>
             `;
