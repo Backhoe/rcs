@@ -24,7 +24,6 @@ div p{color: #fff;}
 figure.zoom {
   background-position: 50% 50%;
   position: relative;
-  width: 60%;
   overflow: hidden;
   cursor: zoom-in;
 }
