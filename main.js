@@ -12,10 +12,15 @@ const go = () => {
     console.log(laDate);    
 
     const url = "https://s3-eu-west-1.amazonaws.com/timelapsestorage/";
-    const divs = document.querySelectorAll(".imgContainer");
+    const ids = ["48043a4cf8b55d0019594df225f998b3", "a2cc7835d2d58445e6615efebe5bbeaf","55a4eb940cb294f7cad1235a8e87b7bf"];
+    
+    const container = document.querySelector(".flex.imgsContainer");
+    container.innerHTML = "";
 
-    divs.forEach(div => {
-        const cam = div.id;
+    ids.forEach(id => {
+        console.log(id);
+        cam = id;
+        div = document.createElement("div");
         for (let i = 5; i < 10; i++) {
             const a = document.createElement("a");
             const suffix = i < 10 ? `0${i}` : i;
@@ -32,6 +37,7 @@ const go = () => {
             `;
             div.append(a);
         }
+        container.append(div);
     });
 }
 
@@ -41,11 +47,7 @@ document.body.innerHTML = `
         <li><label>Date et Heure</label> <input type='datetime-local' id='datetime-local' value="${now.toISOString().slice(0,16)}" step="300"></li>
         <li><button onclick='go()'>Go</button></li>
     </ul>
-    <div class="flex">
-        <div class="imgContainer" id="48043a4cf8b55d0019594df225f998b3"></div>
-        <div class="imgContainer" id="a2cc7835d2d58445e6615efebe5bbeaf"></div>
-        <div class="imgContainer" id="55a4eb940cb294f7cad1235a8e87b7bf"></div>
-    </div>
+    <div class="flex imgsContainer"></div>
 `;
 
 const zoom = (e) => {
