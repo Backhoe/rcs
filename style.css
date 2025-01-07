@@ -40,7 +40,7 @@ figure.zoom img {
     "big small1"
     "big small2";
     align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   border: none;
   margin-top: 20px;
 }
