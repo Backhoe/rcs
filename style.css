@@ -12,6 +12,7 @@ ul li{ margin: 0 10px;}
 ul input, ul select, ul button{color: #000;}
 ul input{border: solid 1px #efefef;}
 ul button{ border: solid 1px #efefef; padding: 10px; background-color :#4172FA; border-radius:10px; color:#fff;}
+
 div{
     margin: 10px 0;
     padding: 10px;
@@ -34,4 +35,32 @@ figure.zoom img {
   transition: opacity 0.5s;
   display: block;
   width: 100%;
+}
+
+.imgsContainer{
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 65vw 32vw;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "big small1"
+    "big small2";
+    }
+
+.imgsContainer div{
+  position: relative;
+  padding: 5px;
+}
+
+.imgsContainer div:nth-child(1){
+  grid-area: big;
+}
+
+.imgsContainer div:nth-child(2){
+  grid-area: small1;
+}
+
+.imgsContainer div:nth-child(3){
+  grid-area: small2;
 }
