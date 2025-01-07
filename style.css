@@ -1,12 +1,20 @@
 html, body{ min-height: 100vh;}
 body{ font-family: sans-serif; background-color: #1b1b1b;}
-ul{ color:#fff;
-    position: sticky;
+ul{
+    color: #fff;
+    position: absolute;
     display: flex;
     align-items: center;
     padding: 10px;
     border-radius: 10px;
     border: solid 2px rgba(255, 255, 255, 0.288);
+    top: 0;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, 0px);
+    background: #1b1b1b;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
 ul li{ margin: 0 10px;}
 ul input, ul select, ul button{color: #000;}
@@ -31,7 +39,7 @@ figure.zoom img {
 }
 
 .imgsContainer{
-  padding: 0;
+  padding-top: 20px;
   list-style: none;
   display: grid;
   grid-template-columns: 65vw 32vw;
@@ -42,7 +50,6 @@ figure.zoom img {
     align-items: center;
   justify-content: space-evenly;
   border: none;
-  margin-top: 20px;
 }
 
 .imgsContainer div{
