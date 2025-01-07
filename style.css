@@ -1,4 +1,4 @@
-html, body{ min-height: 100%;}
+html, body{ min-height: 100vh;}
 body{ font-family: sans-serif; background-color: #1b1b1b;}
 ul{ color:#fff;
     position: sticky;
@@ -12,13 +12,6 @@ ul li{ margin: 0 10px;}
 ul input, ul select, ul button{color: #000;}
 ul input{border: solid 1px #efefef;}
 ul button{ border: solid 1px #efefef; padding: 10px; background-color :#4172FA; border-radius:10px; color:#fff;}
-
-div{
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 10px;
-    border: solid 2px rgba(255, 255, 255, 0.288);
-}
 
 div p{color: #fff;}
 
@@ -38,7 +31,7 @@ figure.zoom img {
 }
 
 .imgsContainer{
-  padding-left: 0;
+  padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: 65vw 32vw;
@@ -46,11 +39,18 @@ figure.zoom img {
   grid-template-areas: 
     "big small1"
     "big small2";
-    }
+    align-items: center;
+  justify-content: space-evenly;
+  border: none;
+  margin: 10px 0;
+}
 
 .imgsContainer div{
   position: relative;
-  padding: 5px;
+  padding: 0;
+  overflow: hidden;
+    border-radius: 10px;
+    border: solid 2px rgba(255, 255, 255, 0.288);
 }
 
 .imgsContainer div:nth-child(1){
