@@ -40,9 +40,9 @@ figure.zoom img {
     "big small1"
     "big small2";
     align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   border: none;
-  margin: 10px 0;
+  margin-top: 20px;
 }
 
 .imgsContainer div{
