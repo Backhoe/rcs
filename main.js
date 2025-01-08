@@ -1,8 +1,6 @@
 const now = new Date();
 const localISOTime = new Date(now.getTime() - (now.getTimezoneOffset() * 60000)).toISOString().slice(0, 16);
 
-const imgsContainer = document.querySelector('.imgsContainer');
-
 document.body.innerHTML = `
     <ul>
         <li><label>Date et Heure</label> <input type='datetime-local' id='datetime-local' value="${localISOTime}"></li>
@@ -69,5 +67,5 @@ const zoom = (e) => {
 go();
 
 const switchClass = (className) => {
-    imgsContainer.className = 'flex imgsContainer ' + className;
+    document.querySelector('.imgsContainer').className = 'flex imgsContainer ' + className;
 };
