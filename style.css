@@ -52,6 +52,24 @@ figure.zoom img {
   border: none;
 }
 
+.vue1{
+    grid-template-areas: 
+    "big small1"
+    "big small2";
+}
+
+.vue2{
+    grid-template-areas: 
+    "small1 small2"
+    "small1 big";
+}
+
+.vue3{
+    grid-template-areas: 
+    "small2 big"
+    "small2 small1";
+}
+
 .imgsContainer div{
   position: relative;
   padding: 0;
