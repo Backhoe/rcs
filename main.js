@@ -5,9 +5,9 @@ document.body.innerHTML = `
     <ul>
         <li><label>Date et Heure</label> <input type='datetime-local' id='datetime-local' value="${localISOTime}"></li>
         <li><button onclick='go()'>Go</button></li>
-        <li><button onclick='switchClass("vue1")'>Vue 1</button></li>
-        <li><button onclick='switchClass("vue2")'>Vue 2</button></li>
-        <li><button onclick='switchClass("vue3")'>Vue 3</button></li>
+        <li><button onclick='switchClass("vue1")'>1</button></li>
+        <li><button onclick='switchClass("vue2")'>2</button></li>
+        <li><button onclick='switchClass("vue3")'>3</button></li>
     </ul>
     <div class="flex imgsContainer"></div>
 `;
