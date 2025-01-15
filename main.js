@@ -3,11 +3,9 @@ const localISOTime = new Date(now.getTime() - (now.getTimezoneOffset() * 60000))
 
 document.body.innerHTML = `
     <ul>
+        <li><label>Vues</label> <button onclick='switchClass("vue1")'>1</button><button onclick='switchClass("vue2")'>2</button><button onclick='switchClass("vue3")'>3</button>
         <li><label>Date et Heure</label> <input type='datetime-local' id='datetime-local' value="${localISOTime}"></li>
         <li><button onclick='go()'>Go</button></li>
-        <li><button onclick='switchClass("vue1")'>1</button></li>
-        <li><button onclick='switchClass("vue2")'>2</button></li>
-        <li><button onclick='switchClass("vue3")'>3</button></li>
     </ul>
     <div class="flex imgsContainer"></div>
 `;
