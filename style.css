@@ -89,3 +89,23 @@ figure.zoom img {
 .imgsContainer div:nth-child(3){
   grid-area: small2;
 }
+
+@media only screen and (max-width: 767px){
+    .imgsContainer{
+        padding-top: 0px;
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 100px;
+    }
+
+    ul li:first-child{ display: none;}
+
+   ul{
+        top: auto;
+        bottom: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
