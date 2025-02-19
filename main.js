@@ -33,7 +33,7 @@ const go = () => {
         console.log(id);
         cam = id;
         div = document.createElement("div");
-        for (let i = 5; i < 10; i++) {
+        for (let i = 0; i < 12; i++) {
             const a = document.createElement("a");
             const suffix = i < 10 ? `0${i}` : i;
             const lienH = `${url}${cam}/HIGH/${laDate}${suffix}.jpg`;
