@@ -39,7 +39,7 @@ const go = async () => {
     const ids = ["48043a4cf8b55d0019594df225f998b3", "a2cc7835d2d58445e6615efebe5bbeaf", "55a4eb940cb294f7cad1235a8e87b7bf"];
     const root = "https://s3-eu-west-1.amazonaws.com/timelapsestorage/";
     
-    const SECONDS_RANGE = 5; 
+    const SECONDS_RANGE = 10; 
     const MAX_PALIERS = 12;  
 
     ids.forEach(async (id) => {
